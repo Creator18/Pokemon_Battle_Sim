@@ -920,8 +920,10 @@ html, body { overflow:hidden; height:100%; }
   (function() {
     "use strict";
 
-    const API_BASE = "http://localhost:8000";
-    const WS_BASE  = "ws://localhost:8000";
+    const _loc = window.location;
+    const _isLocalDev = (_loc.hostname === "localhost" || _loc.hostname === "127.0.0.1") && (_loc.port === "3000" || _loc.port === "8000");
+    const API_BASE = _isLocalDev ? `http://${_loc.hostname}:8000` : `${_loc.protocol}//${_loc.host}`;
+    const WS_BASE = _isLocalDev ? `ws://${_loc.hostname}:8000` : `${(_loc.protocol === "https:" ? "wss:" : "ws:")}//${_loc.host}`;
 
     let config = null, ws = null, sessionId = null, playerId = null;
 
