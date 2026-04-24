@@ -1,0 +1,30 @@
+{
+  "moves": {
+    "Thunderbolt": {
+      "category": "special",
+      "base_power": 90,
+      "move_type": "Electric",
+      "is_ranged": true,
+      "requires_los": true,
+      "bypasses_los": false,
+      "aoe_radius": 1,
+      "always_hits": false,
+      "needs_momentum": false,
+      "quick_priority": false,
+      "description": "Powerful electric blast. AOE radius 1 (7 tiles). Requires line of sight."
+    },
+    "Electro Web": {
+      "category": "special",
+      "base_power": 40,
+      "move_type": "Electric",
+      "is_ranged": true,
+      "requires_los": true,
+      "bypasses_los": false,
+      "aoe_radius": 1,
+      "always_hits": false,
+      "needs_momentum": false,
+      "quick_priority": false,
+      "description": "Electric web. AOE radius 1 (7 tiles). Places web terrain that applies -1 Speed stage on field entry. Requires line of sight."
+    }
+  }
+}

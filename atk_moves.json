@@ -1,0 +1,43 @@
+{
+  "moves": {
+    "Quick Attack": {
+      "category": "physical",
+      "base_power": 40,
+      "move_type": "Normal",
+      "is_ranged": true,
+      "requires_los": false,
+      "bypasses_los": true,
+      "aoe_radius": 0,
+      "always_hits": false,
+      "needs_momentum": false,
+      "quick_priority": true,
+      "description": "Always strikes first. Attack-first: x1.20 power, no movement. Move-first: boosted range, auto-targets opponent."
+    },
+    "Iron Tail": {
+      "category": "physical",
+      "base_power": 100,
+      "move_type": "Steel",
+      "is_ranged": false,
+      "requires_los": false,
+      "bypasses_los": false,
+      "aoe_radius": 0,
+      "always_hits": false,
+      "needs_momentum": false,
+      "quick_priority": false,
+      "description": "Powerful melee steel strike. Cone AOE (2 tiles). Destroys terrain on hit."
+    },
+    "Volt Tackle": {
+      "category": "physical",
+      "base_power": 120,
+      "move_type": "Electric",
+      "is_ranged": false,
+      "requires_los": false,
+      "bypasses_los": false,
+      "aoe_radius": 0,
+      "always_hits": false,
+      "needs_momentum": true,
+      "quick_priority": false,
+      "description": "Devastating melee charge. Requires straight-line approach for momentum bonus (up to x1.5)."
+    }
+  }
+}
